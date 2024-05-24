@@ -6,7 +6,10 @@ expenseForm.addEventListener('submit', function(event){
 
     const description = document.getElementById('description').value;
     const category = document.getElementById('category').value;
-    const amount = document.getElementById('amount').value;
+    let amount = document.getElementById('amount').value;
+
+    let total = document.getElementById('totall');
+    // total.innerHTML = amount++;
 
     if (document && category && !isNaN(amount)) {
         const newRow = document.createElement('tr');
@@ -14,6 +17,8 @@ expenseForm.addEventListener('submit', function(event){
         newRow.innerHTML = `<td>${description}</td>
         <td>${category}</td>
         <td>${amount}</td>`;
+
+        // total.innerHTML = amount;
 
         expenseList.appendChild(newRow);
 
