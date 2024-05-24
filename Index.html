@@ -21,19 +21,19 @@
                 <select id="category" required>
                     <option value="">Select Category</option>
                     <option value="Food">Food</option>
-                    <option value="Travel">Transportation</option>
-                    <option value="Hospital">Utilities</option>
-                    <option value="Entertainment">Entertainment</option>
+                    <option value="Travel">Travel</option>
+                    <option value="Hospital">Hospital</option>
+                    <option value="Shopping">Shopping</option>
                     <!-- <option value="">Others</option> -->
                 </select><br>
                 <input type="number" id="amount" placeholder="Amount" required><br>
                 <input type="submit" value="Add Expense">
             </form>
 
-            <!-- <div class="total">
+            <div class="total">
                      <div class="totaltext">Total : </div>
                      <div id="totall"> ₹ 0.00</div>
-            </div> -->
+            </div>
 
             
         </div>
@@ -44,7 +44,7 @@
             <h3>Expense Summary</h3>
             <div class="div">
 
-                <table id="expenseTable">
+                <!-- <table id="expenseTable">
                     <thead>
                         <tr>
                             <th>Description</th>
@@ -56,7 +56,46 @@
                     <tbody id="expenseList">
                         
                     </tbody>
-                </table>
+                </table> -->
+
+                <div class="summery">
+                    <div class="Food" id="Food">
+                        <div class="cap">
+                            <div class="desc" id="FoodDes"> </div>
+                            <div class="amt" id="FoodAmt">  <span class="date" id="FoodDate"> </span></div>
+                        </div>
+                    </div>
+                    <div class="Travel">
+                        <div class="cap">
+                            <div class="desc" id="TravelDes"> </div>
+                            <div class="amt" id="TravelAmt">  <span class="date" id="TravelDate"> </span></div>
+                        </div>
+                        <!-- <div class="cap">
+                            <div class="desc">Dinner</div>
+                            <div class="amt">₹ 45000 <span class="date">may 24, 2024</span></div>
+                        </div>
+                        <div class="cap">
+                            <div class="desc">Dinner</div>
+                            <div class="amt">₹ 45000 <span class="date">may 24, 2024</span></div>
+                        </div> -->
+                    </div>
+                    <div class="Shopping">
+                        <div class="cap">
+                            <div class="desc" id="ShoppingDes"></div>
+                            <div class="amt" id="ShoppingAmt"> <span class="date" id="ShoppingDate"></span></div>
+                        </div>
+                    </div>
+                    <div class="Hospital">
+                        <div class="cap">
+                            <div class="desc" id="HospitalDes"> </div>
+                            <div class="amt" id="HospitalAmt"> <span class="date" id="HospitalDate"></span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="percent">
+
+                </div>
             </div>
         </div>
 
